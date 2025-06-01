@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soora Akshay Sagar - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 15px 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .section {
+      min-height: 100vh;
+      padding: 100px 8% 60px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-wrapper {
+      max-width: 1200px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .hero {
+      background: url('home-bg.gif') no-repeat center center fixed;
+      background-size: cover;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      max-width: 700px;
+    }
+
+    .text-block {
+      flex: 1 1 55%;
+    }
+
+    .image-block img {
+      max-width: 450px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #000;
+    }
+
+    .project {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+      align-items: center;
+    }
+
+    .resume-gif {
+      max-width: 450px;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 8px #000;
+    }
+
+    .contact-info {
+      font-size: 4rem;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: #00bcd4;
+    }
+
+    .contact-links a {
+      margin: 0 15px;
+      font-size: 2.5rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #00bcd4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .project {
+        flex-direction: column;
+      }
+
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="section hero">
+    <img src="profile image.jpg" alt="Soora Akshay Sagar" />
+    <h1>Soora Akshay Sagar</h1>
+    <p>2nd Year CSE Student, Aurora Deemed to be University</p>
+  </section>
+
+  <section id="about" class="section" style="background-image: url('about-bg.gif')">
+    <div class="content-wrapper">
+      <div class="text-block">
+        <h2>About Me</h2>
+        <p>I’m passionate about programming and solving real-world problems using technology. I enjoy building user-friendly web applications and working on hardware integration.</p>
+        <p><strong>Skills:</strong> Java, Python, SQL, HTML</p>
+      </div>
+      <div class="image-block">
+        <img src="about.gif" alt="About Me GIF">
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section" style="background-image: url('projects-bg.gif')">
+    <div class="content-wrapper">
+      <h2 style="width: 100%;">My Projects</h2>
+
+      <div class="project">
+        <div class="image-block">
+          <img src="project1.png" alt="Student DBMS">
+        </div>
+        <div class="text-block">
+          <h3>Student Database Management System</h3>
+          <p>Built a CRUD-based application to manage student records using MySQL and Java. Included features like authentication, attendance tracking, and report generation.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="image-block">
+          <img src="project2.jpg" alt="Smart Irrigation">
+        </div>
+        <div class="text-block">
+          <h3>Smart Irrigation System Using Solar Energy</h3>
+          <p>Developed an Arduino-based irrigation system powered by solar energy. Automated watering using soil moisture sensors to enhance water efficiency.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="resume" class="section" style="background-image: url('resume-bg.gif')">
+    <div class="content-wrapper">
+      <div class="text-block">
+        <h2>My Resume</h2>
+        <p>This resume highlights my academic achievements, technical skills, and hands-on project experiences. It also outlines my passion for programming, web development, and embedded systems.</p>
+        <p><a href="akshay resume.pdf" download style="color: #00bcd4;">📄 Download Resume (PDF)</a></p>
+      </div>
+      <div class="image-block">
+        <img src="resume.gif" alt="Resume Preview" class="resume-gif" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section" style="background-image: url('contact-bg.gif')">
+    <div class="content-wrapper" style="flex-direction: column;">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> akshaysagar81101@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91-9705043281</p>
+      </div>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/akshay-sagar-6ab6402bb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Akshaysagar31" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Soora Akshay Sagar. All rights reserved.
+  </footer>
+
+</body>
+</html>
